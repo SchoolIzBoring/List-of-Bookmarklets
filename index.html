@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bookmark Links</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<!-- Custom styles -->
+	<style>
+		.btn {
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<div class="container text-center">
+		<h1>Bookmark Links</h1>
+		<p>Drag the buttons below to your bookmarks bar:</p>
+		<a href="javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Vapor/vapor.min.js';document.body.appendChild(a);%7D())" class="btn btn-secondary" draggable="true" onclick="copyToClipboard('javascript:(function () {var a = document.createElement(\'script\');a.src = \'https://cdn.jsdelivr.net/gh/FogNetwork/Vapor/vapor.min.js\';document.body.appendChild(a);%7D())')">Vapor</a>
+		<a href="javascript:(function(){fetch('https://raw.githubusercontent.com/EnderKingJ/crown-script/main/script.js').then(x=>x.text()).then(eval)})();void(0);" class="btn btn-secondary" draggable="true" onclick="copyToClipboard('javascript:(function(){fetch(\'https://raw.githubusercontent.com/EnderKingJ/crown-script/main/script.js\').then(x=>x.text()).then(eval)})();void(0);')">Crown JS</a>
+        <a href="javascript:(function(){var l=document.querySelector(&quot;link[rel*='icon']&quot;)|| document.createElement('link');l.rel='shortcut icon';l.href= 'https://google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png'; document.querySelector('head').appendChild(l);document.title=&quot;Google&quot;})()" class="btn btn-secondary" draggable="true" onclick="copyToClipboard('javascript:(function(){var l=document.querySelector(&quot;link[rel*=\'icon\']&quot;)|| document.createElement(\'link\');l.rel=\'shortcut icon\';l.href= \'https://google.com/images/branding/googleg/1x/googleg_standard_color_128dp.png\'; document.querySelector(\'head\').appendChild(l);document.title=&quot;Google&quot;})()')">Google Favicon</a>
+		<a href="javascript:var frame = document.createElement('iframe'); frame.src=&quot;https://classic.minecraft.net/&quot;; frame.style.position=&quot;fixed&quot;; frame.style.top=&quot;5%&quot;; frame.style.right=&quot;0%&quot;;frame.style.height=&quot;700px&quot;;frame.style.width=&quot;750px&quot;; frame.style.zIndex=&quot;100000&quot;; document.body.appendChild(frame);var btn = document.createElement('button');btn.style.position=&quot;fixed&quot;;btn.style.top=&quot;5%&quot;;btn.style.right=&quot;25%&quot;;btn.zIndex=&quot;100000&quot;;btn.innerHTML=&quot;HIDE&quot;;btn.onclick=function(){frame.remove();btn.remove();};document.body.appendChild(btn);" class="btn btn-secondary" draggable="true" onclick="copyToClipboard('javascript:var frame = document.createElement(\'iframe\'); frame.src=&quot;https://classic.minecraft.net/&quot;; frame.style.position=&quot;fixed&quot;; frame.style.top=&quot;5%&quot;; frame.style.right=&quot;0%&quot;;frame.style.height=&quot;700px&quot;;frame.style.width=&quot;750px&quot;; frame.style.zIndex=&quot;100000&quot;; document.body.appendChild(frame);var btn = document.createElement(\'button\');btn.style.position=&quot;fixed&quot;;btn.style.top=&quot;5%&quot;;btn.style.right=&quot;25%&quot;;btn.zIndex=&quot;100000&quot;;btn.innerHTML=&quot;HIDE&quot;;btn.onclick=function(){frame.remove();btn.remove();};document.body.appendChild(btn);')">Minecraft Classic</a>
+        <a href="javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Avo/avo.min.js%27;document.body.appendChild(a);%7D())" class="btn btn-secondary" draggable="true" onclick="copyToClipboard('javascript:(function () {var a = document.createElement('script');a.src = 'https://cdn.jsdelivr.net/gh/FogNetwork/Avo/avo.min.js%27;document.body.appendChild(a);%7D())')">Avo</a>
+	</div>
+
+	<!-- Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNVQ8vc" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script>
+		function copyToClipboard(link) {
+			const el = document.createElement('textarea');
+			el.value = link;
+			document.body.appendChild(el);
+			el.select();
+			document.execCommand('copy');
+			document.body.removeChild(el);
+			alert("Bookmarklet Copied To Clipboard And Is Running Refresh To Make It Stop");
+		}
+	</script>
+</body>
+</html>
